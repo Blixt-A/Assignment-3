@@ -1,0 +1,141 @@
+* {
+	box-sizing: border-box;
+	font-family: cursive;
+    }
+
+header {
+	padding-top: 30px;
+    }
+
+html, body {
+	height: 100%;
+	background: lightblue;
+    }
+
+  h1 {
+	text-align: center;
+	color: #fff;
+    }
+
+  .wrap {
+    height: 100%;
+    min-height: 500px;
+    padding-bottom: 20px;
+    }
+
+.game {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+	height: 100%;
+	justify-content: center;
+    }
+
+.card {
+	padding: 5px;
+    cursor: pointer;
+	width: 25%;
+	height: 25%;
+	}
+
+img {
+	height: auto;
+	width: 100%;
+    }
+
+.inside {
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	transition: .4s ease-in-out;
+	background: #fff;
+    }
+
+.picked-card, .matching {
+	transform: rotateY(180deg);
+	}
+
+.matching {
+	border: 6px solid #7FD7E9;
+	animation: 0.8s;
+	animation-delay: .4s;
+    }
+
+.front, .back {
+  	backface-visibility: hidden;
+  	position: absolute;
+  	width: 100%;
+  	height: 100%;
+  	padding: 20px;
+  	}
+
+img {
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+	max-height: 100%;
+  	}
+
+.front {
+  	transform: rotateY(-180deg);
+  	padding: 5px;
+  	}
+
+.back {
+	transform: rotate(0);
+    }
+  
+.pop-up-overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	}
+
+.pop-up {
+	display: none;
+	position: relative;
+	width: 500px;
+	height: 400px;
+	max-height: 90%;
+	max-width: 90%;
+	min-height: 380px;
+	margin: 0 auto;
+	background: #fff;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 30px 10px; 
+	}
+	
+.game-end {
+	font-size: 80px;
+	text-align: center;
+	color: #9EE3F9;
+	font-size: 60px;
+	}
+	
+.play-again {
+	margin: 30px auto;
+	padding: 20px 30px;
+	display: block;
+	font-size: 30px;
+	border: none;
+	background: #fff;
+	border: 5px solid #9EE3F9;
+	border-radius: 5px;
+	color: #9EE3F9;
+	cursor: pointer;
+	}
+
+.play-again:hover {
+	background: #9EE3F9;
+	color: #fff;
+    }
+
+
+
+	
+
+	
